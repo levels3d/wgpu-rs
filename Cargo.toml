@@ -48,7 +48,7 @@ parking_lot = "0.10"
 #Note: we may consider switching this to "dev-dependencies" if users
 # want to opt into X11 explicitly.
 [target.'cfg(all(unix, not(target_os = "ios"), not(target_os = "macos")))'.dependencies]
-gfx-backend-vulkan = { version = "0.5", features = ["x11"] }
+gfx-backend-vulkan = { version = "0.5", features = [] }
 
 [dev-dependencies]
 cgmath = "0.17"
